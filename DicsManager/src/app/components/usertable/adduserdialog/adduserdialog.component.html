@@ -1,0 +1,101 @@
+<div class="container-dialog">
+  <button class="btn-dialog" mat-dialog-close>
+    <mat-icon>close</mat-icon>
+  </button>
+  <mat-horizontal-stepper linear="true" #stepper
+    style="min-height: 5em; min-width: 10em; display: flex; flex-direction: column; justify-content: center;">
+    <mat-step [stepControl]="firstFormGroup">
+      <form class="firstForm" [formGroup]="firstFormGroup">
+        <ng-template matStepLabel>
+          <p class="step-label">Insert Personal Data</p>
+        </ng-template>
+
+        <mat-form-field>
+          <input type="text" matInput formControlName="name" required placeholder="Full Name">
+        </mat-form-field><br />
+
+        <mat-form-field>
+          <input email matInput formControlName="email" required placeholder="E-mail">
+        </mat-form-field><br />
+
+        <mat-form-field>
+          <input type="text" matInput formControlName="avatar" placeholder="Photo Link">
+        </mat-form-field><br />
+
+        <mat-dialog-actions>
+          <button class="stepbtn" mat-button matStepperNext>
+            Next<mat-icon>keyboard_arrow_right</mat-icon>
+          </button>
+        </mat-dialog-actions>
+
+      </form>
+    </mat-step>
+
+    <mat-step [stepControl]="secondFormGroup">
+      <div>
+        <ng-template matStepLabel class="step-label">
+          <p class="step-label">Insert Department and Process</p>
+        </ng-template>
+        <form class="secondForm" [formGroup]="secondFormGroup">
+          <mat-form-field>
+            <mat-select formControlName="department" required placeholder="User Department" selected="data.body.department">
+              <mat-option *ngFor="let d of departmentArray" [value]="d.id">
+                {{ d.name }}
+              </mat-option>
+            </mat-select>
+          </mat-form-field><br />
+
+          <mat-form-field>
+            <mat-select formControlName="process" placeholder="User Process" selected="data.body.process">
+              <mat-option *ngFor="let p of processArray" [value]="p.id">
+                {{ p.name }}
+              </mat-option>
+            </mat-select>
+          </mat-form-field><br />
+
+          <mat-form-field>
+            <mat-select formControlName="isLeaderDepartment" required placeholder="Department Leader" selected="data.body.isLeaderDepartment">
+              <mat-option [value]="0">
+                No
+              </mat-option>
+              <mat-option [value]="1">
+                Yes
+              </mat-option>
+            </mat-select>
+          </mat-form-field><br />
+
+          <mat-form-field>
+            <mat-select formControlName="isLeaderProcess" required placeholder="Process Leader" selected="data.body.isLeaderProcess">
+              <mat-option [value]="0">
+                No
+              </mat-option>
+              <mat-option [value]="1">
+                Yes
+              </mat-option>
+            </mat-select>
+          </mat-form-field><br />
+
+          <mat-form-field>
+              <mat-select formControlName="isAdmin" required placeholder="Administrator" selected="data.body.isAdmin">
+                <mat-option [value]="0">
+                  No
+                </mat-option>
+                <mat-option [value]="1">
+                  Yes
+                </mat-option>
+              </mat-select>
+            </mat-form-field><br />
+
+        </form>
+
+        <button class="stepbtn" mat-button matStepperPrevious>
+          <mat-icon>keyboard_arrow_left</mat-icon>Back
+        </button>
+      </div>
+
+    </mat-step>
+  </mat-horizontal-stepper>
+  <button (click)="save()" class="btn-dialog">
+    <mat-icon>check</mat-icon>
+  </button>
+</div>

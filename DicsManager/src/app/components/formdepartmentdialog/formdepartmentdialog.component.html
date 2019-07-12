@@ -1,0 +1,25 @@
+<div class="container-dialog">
+  <button class="btn-dialog" mat-dialog-close>
+    <mat-icon>close</mat-icon>
+  </button>
+  <mat-horizontal-stepper linear="true" #stepper
+    style="min-height: 5em; min-width: 10em; display: flex; flex-direction: column; justify-content: center;">
+    <mat-step [stepControl]="firstFormGroup">
+      <form class="firstForm" [formGroup]="firstFormGroup">
+        <ng-template matStepLabel>
+          <p class="step-label">Insert Department Name</p>
+        </ng-template>
+
+        <mat-form-field>
+          <input type="text" matInput formControlName="name" required placeholder="Full Name">
+        </mat-form-field><br />
+
+      </form>
+    </mat-step>
+
+
+  </mat-horizontal-stepper>
+  <button (click)="save()" class="btn-dialog">
+    <mat-icon>check</mat-icon>
+  </button>
+</div>

@@ -1,0 +1,29 @@
+<div class="container-login">
+    <mat-card class="container-card">
+      <mat-card-header>
+        <div class="register-header" >
+        </div>
+      </mat-card-header>
+      <br/>
+      <mat-card-title style="display: flex; justify-content: center"><img src="../../../assets/img/qualiex_logo_blue_login.png" width="20%" height="20%"></mat-card-title>
+      <br/>
+      <mat-card-content class="container-content">
+        <div class="form-login">
+          <div style="display: flex; justify-content: center">
+            <mat-form-field>
+              <input matInput name="userEmail" placeholder="E-mail" #userEmail />
+              <mat-icon matSuffix>person</mat-icon>
+            </mat-form-field>
+          </div>
+          <div style="display: flex; justify-content: center">
+            <mat-form-field>
+              <input matInput name="userPassword" type="password" placeholder="Password" #userPassword (keyup.enter)="login()"/>
+              <mat-icon matSuffix>lock</mat-icon>
+            </mat-form-field>
+          </div>
+          <br/>
+        </div>
+        <button mat-raised-button color="primary" (click)="login()" style="display: flex; justify-content: center; margin:auto">Enter</button>
+      </mat-card-content>
+    </mat-card>
+  </div>

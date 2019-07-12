@@ -1,0 +1,10 @@
+<div [ngSwitch]="operation">
+    <h3 *ngSwitchCase="false">Operation Canceled!</h3>
+    <h3 *ngSwitchCase="true">Operation Sucess!</h3>
+    <h3 *ngSwitchCase="'invalid'">Fields Invalids!</h3>
+    <h3 *ngSwitchCase="'currentUser'">Can not delete current session User, if want do it, go to Settings!</h3>
+    <mat-dialog-actions style="display: flex; justify-content:center">
+      <!-- The mat-dialog-close directive optionally accepts a value as a result for the dialog. -->
+      <button mat-button (click)="exit()">Ok</button>
+    </mat-dialog-actions>
+  </div>

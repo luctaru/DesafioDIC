@@ -1,0 +1,22 @@
+.container-dialog{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+.firstForm{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.btn-dialog{
+  padding: 0;
+  border: none;
+  background: none;
+  outline: none;
+}
+
+.btn-dialog :hover{
+  cursor: pointer;
+}

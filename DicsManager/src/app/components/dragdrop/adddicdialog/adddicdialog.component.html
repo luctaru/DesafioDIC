@@ -1,0 +1,65 @@
+<div class="container-dialog">
+  <button class="btn-dialog" mat-dialog-close>
+    <mat-icon>close</mat-icon>
+  </button>
+  <mat-horizontal-stepper linear="true" #stepper
+    style="min-height: 5em; min-width: 10em; display: flex; flex-direction: column; justify-content: center;">
+    <mat-step [stepControl]="firstFormGroup">
+      <form class="firstForm" [formGroup]="firstFormGroup">
+        <ng-template matStepLabel>
+          <p class="step-label">Insert DIC data</p>
+        </ng-template>
+        <mat-form-field>
+          <input type="text" matInput formControlName="user" required placeholder="DIC User"
+            [matAutocomplete]="autoUser">
+          <mat-autocomplete #autoUser="matAutocomplete" [displayWith]="displayFn">
+            <mat-option *ngFor="let option of filteredOptions | async" [value]="option">{{option?.name}}</mat-option>
+          </mat-autocomplete>
+        </mat-form-field><br />
+        <mat-form-field>
+          <mat-select formControlName="status" required placeholder="DIC Status" selected="data.body.status">
+            <mat-option *ngFor="let u of statusArray" [value]="u.id">
+              {{ u.name }}
+            </mat-option>
+          </mat-select>
+        </mat-form-field><br />
+        <mat-form-field>
+          <mat-select formControlName="period" required placeholder="DIC Period" selected="data.body.period">
+            <mat-option *ngFor="let u of periodArray" [value]="u.id">
+              {{ u.name }}
+            </mat-option>
+          </mat-select>
+        </mat-form-field><br />
+        <mat-dialog-actions>
+
+          <button class="stepbtn" mat-button matStepperNext>
+            Next<mat-icon>keyboard_arrow_right</mat-icon>
+          </button>
+        </mat-dialog-actions>
+
+      </form>
+    </mat-step>
+
+    <mat-step [stepControl]="secondFormGroup">
+      <div>
+        <ng-template matStepLabel class="step-label">
+          <p class="step-label">Insert DIC Description and Conclusion</p>
+        </ng-template>
+        <form class="secondForm" [formGroup]="secondFormGroup">
+          <mat-form-field>
+            <textarea class="description-textarea" type="text" matInput placeholder="Description"
+              formControlName="description" required></textarea>
+          </mat-form-field><br />
+        </form>
+
+        <button class="stepbtn" mat-button matStepperPrevious>
+          <mat-icon>keyboard_arrow_left</mat-icon>Back
+        </button>
+      </div>
+
+    </mat-step>
+  </mat-horizontal-stepper>
+  <button (click)="save()" class="btn-dialog">
+    <mat-icon>check</mat-icon>
+  </button>
+</div>

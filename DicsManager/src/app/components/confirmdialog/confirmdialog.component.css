@@ -1,0 +1,10 @@
+.btn-dialog{
+  padding: 0;
+  border: none;
+  background: none;
+  outline: none;
+}
+
+.btn-dialog :hover{
+  cursor: pointer;
+}

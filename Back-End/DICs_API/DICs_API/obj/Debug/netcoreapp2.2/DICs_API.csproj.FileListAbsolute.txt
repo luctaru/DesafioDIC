@@ -1,0 +1,84 @@
+C:\Users\camila.lima\Desktop\Desafio final\Dics\DICs_API\DICs_API\bin\Debug\netcoreapp2.2\DICs_API.deps.json
+C:\Users\camila.lima\Desktop\Desafio final\Dics\DICs_API\DICs_API\bin\Debug\netcoreapp2.2\DICs_API.runtimeconfig.json
+C:\Users\camila.lima\Desktop\Desafio final\Dics\DICs_API\DICs_API\bin\Debug\netcoreapp2.2\DICs_API.runtimeconfig.dev.json
+C:\Users\camila.lima\Desktop\Desafio final\Dics\DICs_API\DICs_API\bin\Debug\netcoreapp2.2\DICs_API.dll
+C:\Users\camila.lima\Desktop\Desafio final\Dics\DICs_API\DICs_API\obj\Debug\netcoreapp2.2\DICs_API.csprojAssemblyReference.cache
+C:\Users\camila.lima\Desktop\Desafio final\Dics\DICs_API\DICs_API\obj\Debug\netcoreapp2.2\DICs_API.csproj.CoreCompileInputs.cache
+C:\Users\camila.lima\Desktop\Desafio final\Dics\DICs_API\DICs_API\obj\Debug\netcoreapp2.2\DICs_API.RazorAssemblyInfo.cache
+C:\Users\camila.lima\Desktop\Desafio final\Dics\DICs_API\DICs_API\obj\Debug\netcoreapp2.2\DICs_API.RazorAssemblyInfo.cs
+C:\Users\camila.lima\Desktop\Desafio final\Dics\DICs_API\DICs_API\obj\Debug\netcoreapp2.2\DICs_API.AssemblyInfoInputs.cache
+C:\Users\camila.lima\Desktop\Desafio final\Dics\DICs_API\DICs_API\obj\Debug\netcoreapp2.2\DICs_API.AssemblyInfo.cs
+C:\Users\camila.lima\Desktop\Desafio final\Dics\DICs_API\DICs_API\obj\Debug\netcoreapp2.2\DICs_API.RazorTargetAssemblyInfo.cache
+C:\Users\camila.lima\Desktop\Desafio final\Dics\DICs_API\DICs_API\bin\Debug\netcoreapp2.2\DICs_API.pdb
+C:\Users\camila.lima\Desktop\Desafio final\Dics\DICs_API\DICs_API\obj\Debug\netcoreapp2.2\DICs_API.dll
+C:\Users\camila.lima\Desktop\Desafio final\Dics\DICs_API\DICs_API\obj\Debug\netcoreapp2.2\DICs_API.pdb
+C:\Users\tamyres\Desktop\Desafios\Dics\Dics\DICs_API\DICs_API\bin\Debug\netcoreapp2.2\DICs_API.deps.json
+C:\Users\tamyres\Desktop\Desafios\Dics\Dics\DICs_API\DICs_API\bin\Debug\netcoreapp2.2\DICs_API.runtimeconfig.json
+C:\Users\tamyres\Desktop\Desafios\Dics\Dics\DICs_API\DICs_API\bin\Debug\netcoreapp2.2\DICs_API.runtimeconfig.dev.json
+C:\Users\tamyres\Desktop\Desafios\Dics\Dics\DICs_API\DICs_API\bin\Debug\netcoreapp2.2\DICs_API.dll
+C:\Users\tamyres\Desktop\Desafios\Dics\Dics\DICs_API\DICs_API\bin\Debug\netcoreapp2.2\DICs_API.pdb
+C:\Users\tamyres\Desktop\Desafios\Dics\Dics\DICs_API\DICs_API\obj\Debug\netcoreapp2.2\DICs_API.csprojAssemblyReference.cache
+C:\Users\tamyres\Desktop\Desafios\Dics\Dics\DICs_API\DICs_API\obj\Debug\netcoreapp2.2\DICs_API.csproj.CoreCompileInputs.cache
+C:\Users\tamyres\Desktop\Desafios\Dics\Dics\DICs_API\DICs_API\obj\Debug\netcoreapp2.2\DICs_API.RazorAssemblyInfo.cache
+C:\Users\tamyres\Desktop\Desafios\Dics\Dics\DICs_API\DICs_API\obj\Debug\netcoreapp2.2\DICs_API.RazorAssemblyInfo.cs
+C:\Users\tamyres\Desktop\Desafios\Dics\Dics\DICs_API\DICs_API\obj\Debug\netcoreapp2.2\DICs_API.AssemblyInfoInputs.cache
+C:\Users\tamyres\Desktop\Desafios\Dics\Dics\DICs_API\DICs_API\obj\Debug\netcoreapp2.2\DICs_API.AssemblyInfo.cs
+C:\Users\tamyres\Desktop\Desafios\Dics\Dics\DICs_API\DICs_API\obj\Debug\netcoreapp2.2\DICs_API.RazorTargetAssemblyInfo.cache
+C:\Users\tamyres\Desktop\Desafios\Dics\Dics\DICs_API\DICs_API\obj\Debug\netcoreapp2.2\DICs_API.dll
+C:\Users\tamyres\Desktop\Desafios\Dics\Dics\DICs_API\DICs_API\obj\Debug\netcoreapp2.2\DICs_API.pdb
+C:\Users\lucas.tarumoto\Documents\Dics\DICs_API\DICs_API\bin\Debug\netcoreapp2.2\DICs_API.deps.json
+C:\Users\lucas.tarumoto\Documents\Dics\DICs_API\DICs_API\bin\Debug\netcoreapp2.2\DICs_API.runtimeconfig.json
+C:\Users\lucas.tarumoto\Documents\Dics\DICs_API\DICs_API\bin\Debug\netcoreapp2.2\DICs_API.runtimeconfig.dev.json
+C:\Users\lucas.tarumoto\Documents\Dics\DICs_API\DICs_API\bin\Debug\netcoreapp2.2\DICs_API.dll
+C:\Users\lucas.tarumoto\Documents\Dics\DICs_API\DICs_API\bin\Debug\netcoreapp2.2\DICs_API.pdb
+C:\Users\lucas.tarumoto\Documents\Dics\DICs_API\DICs_API\obj\Debug\netcoreapp2.2\DICs_API.csprojAssemblyReference.cache
+C:\Users\lucas.tarumoto\Documents\Dics\DICs_API\DICs_API\obj\Debug\netcoreapp2.2\DICs_API.csproj.CoreCompileInputs.cache
+C:\Users\lucas.tarumoto\Documents\Dics\DICs_API\DICs_API\obj\Debug\netcoreapp2.2\DICs_API.RazorAssemblyInfo.cache
+C:\Users\lucas.tarumoto\Documents\Dics\DICs_API\DICs_API\obj\Debug\netcoreapp2.2\DICs_API.RazorAssemblyInfo.cs
+C:\Users\lucas.tarumoto\Documents\Dics\DICs_API\DICs_API\obj\Debug\netcoreapp2.2\DICs_API.AssemblyInfoInputs.cache
+C:\Users\lucas.tarumoto\Documents\Dics\DICs_API\DICs_API\obj\Debug\netcoreapp2.2\DICs_API.AssemblyInfo.cs
+C:\Users\lucas.tarumoto\Documents\Dics\DICs_API\DICs_API\obj\Debug\netcoreapp2.2\DICs_API.RazorTargetAssemblyInfo.cache
+C:\Users\lucas.tarumoto\Documents\Dics\DICs_API\DICs_API\obj\Debug\netcoreapp2.2\DICs_API.dll
+C:\Users\lucas.tarumoto\Documents\Dics\DICs_API\DICs_API\obj\Debug\netcoreapp2.2\DICs_API.pdb
+C:\Users\tamyres\Desktop\Desafios\Nova pasta\Dics\DICs_API\DICs_API\bin\netcoreapp2.2\DICs_API.deps.json
+C:\Users\tamyres\Desktop\Desafios\Nova pasta\Dics\DICs_API\DICs_API\bin\netcoreapp2.2\DICs_API.runtimeconfig.json
+C:\Users\tamyres\Desktop\Desafios\Nova pasta\Dics\DICs_API\DICs_API\bin\netcoreapp2.2\DICs_API.runtimeconfig.dev.json
+C:\Users\tamyres\Desktop\Desafios\Nova pasta\Dics\DICs_API\DICs_API\bin\netcoreapp2.2\DICs_API.dll
+C:\Users\tamyres\Desktop\Desafios\Nova pasta\Dics\DICs_API\DICs_API\bin\netcoreapp2.2\DICs_API.pdb
+C:\Users\tamyres\Desktop\Desafios\Nova pasta\Dics\DICs_API\DICs_API\bin\netcoreapp2.2\SwaggerConfig.xml
+C:\Users\tamyres\Desktop\Desafios\Nova pasta\Dics\DICs_API\DICs_API\obj\Debug\netcoreapp2.2\DICs_API.csprojAssemblyReference.cache
+C:\Users\tamyres\Desktop\Desafios\Nova pasta\Dics\DICs_API\DICs_API\obj\Debug\netcoreapp2.2\DICs_API.csproj.CoreCompileInputs.cache
+C:\Users\tamyres\Desktop\Desafios\Nova pasta\Dics\DICs_API\DICs_API\obj\Debug\netcoreapp2.2\DICs_API.RazorAssemblyInfo.cache
+C:\Users\tamyres\Desktop\Desafios\Nova pasta\Dics\DICs_API\DICs_API\obj\Debug\netcoreapp2.2\DICs_API.RazorAssemblyInfo.cs
+C:\Users\tamyres\Desktop\Desafios\Nova pasta\Dics\DICs_API\DICs_API\obj\Debug\netcoreapp2.2\DICs_API.AssemblyInfoInputs.cache
+C:\Users\tamyres\Desktop\Desafios\Nova pasta\Dics\DICs_API\DICs_API\obj\Debug\netcoreapp2.2\DICs_API.AssemblyInfo.cs
+C:\Users\tamyres\Desktop\Desafios\Nova pasta\Dics\DICs_API\DICs_API\obj\Debug\netcoreapp2.2\DICs_API.RazorTargetAssemblyInfo.cache
+C:\Users\tamyres\Desktop\Desafios\Nova pasta\Dics\DICs_API\DICs_API\obj\Debug\netcoreapp2.2\DICs_API.dll
+C:\Users\tamyres\Desktop\Desafios\Nova pasta\Dics\DICs_API\DICs_API\obj\Debug\netcoreapp2.2\DICs_API.pdb
+C:\Users\camila.lima\Desktop\Desafio final\Dics\DICs_API\DICs_API\bin\netcoreapp2.2\DICs_API.deps.json
+C:\Users\camila.lima\Desktop\Desafio final\Dics\DICs_API\DICs_API\bin\netcoreapp2.2\DICs_API.runtimeconfig.json
+C:\Users\camila.lima\Desktop\Desafio final\Dics\DICs_API\DICs_API\bin\netcoreapp2.2\DICs_API.runtimeconfig.dev.json
+C:\Users\camila.lima\Desktop\Desafio final\Dics\DICs_API\DICs_API\bin\netcoreapp2.2\DICs_API.dll
+C:\Users\camila.lima\Desktop\Desafio final\Dics\DICs_API\DICs_API\bin\netcoreapp2.2\DICs_API.pdb
+C:\Users\camila.lima\Desktop\Desafio final\Dics\DICs_API\DICs_API\bin\netcoreapp2.2\SwaggerConfig.xml
+C:\Users\lucas.tarumoto\Documents\Dics\DICs_API\DICs_API\bin\netcoreapp2.2\DICs_API.deps.json
+C:\Users\lucas.tarumoto\Documents\Dics\DICs_API\DICs_API\bin\netcoreapp2.2\DICs_API.runtimeconfig.json
+C:\Users\lucas.tarumoto\Documents\Dics\DICs_API\DICs_API\bin\netcoreapp2.2\DICs_API.runtimeconfig.dev.json
+C:\Users\lucas.tarumoto\Documents\Dics\DICs_API\DICs_API\bin\netcoreapp2.2\DICs_API.dll
+C:\Users\lucas.tarumoto\Documents\Dics\DICs_API\DICs_API\bin\netcoreapp2.2\DICs_API.pdb
+C:\Users\lucas.tarumoto\Documents\Dics\DICs_API\DICs_API\bin\netcoreapp2.2\SwaggerConfig.xml
+C:\Users\lucas.tarumoto\Documents\DesafioDIC\Dics\DICs_API\DICs_API\bin\netcoreapp2.2\DICs_API.deps.json
+C:\Users\lucas.tarumoto\Documents\DesafioDIC\Dics\DICs_API\DICs_API\bin\netcoreapp2.2\DICs_API.runtimeconfig.json
+C:\Users\lucas.tarumoto\Documents\DesafioDIC\Dics\DICs_API\DICs_API\bin\netcoreapp2.2\DICs_API.runtimeconfig.dev.json
+C:\Users\lucas.tarumoto\Documents\DesafioDIC\Dics\DICs_API\DICs_API\bin\netcoreapp2.2\DICs_API.dll
+C:\Users\lucas.tarumoto\Documents\DesafioDIC\Dics\DICs_API\DICs_API\bin\netcoreapp2.2\DICs_API.pdb
+C:\Users\lucas.tarumoto\Documents\DesafioDIC\Dics\DICs_API\DICs_API\bin\netcoreapp2.2\SwaggerConfig.xml
+C:\Users\lucas.tarumoto\Documents\DesafioDIC\Dics\DICs_API\DICs_API\obj\Debug\netcoreapp2.2\DICs_API.csprojAssemblyReference.cache
+C:\Users\lucas.tarumoto\Documents\DesafioDIC\Dics\DICs_API\DICs_API\obj\Debug\netcoreapp2.2\DICs_API.csproj.CoreCompileInputs.cache
+C:\Users\lucas.tarumoto\Documents\DesafioDIC\Dics\DICs_API\DICs_API\obj\Debug\netcoreapp2.2\DICs_API.RazorAssemblyInfo.cache
+C:\Users\lucas.tarumoto\Documents\DesafioDIC\Dics\DICs_API\DICs_API\obj\Debug\netcoreapp2.2\DICs_API.RazorAssemblyInfo.cs
+C:\Users\lucas.tarumoto\Documents\DesafioDIC\Dics\DICs_API\DICs_API\obj\Debug\netcoreapp2.2\DICs_API.AssemblyInfoInputs.cache
+C:\Users\lucas.tarumoto\Documents\DesafioDIC\Dics\DICs_API\DICs_API\obj\Debug\netcoreapp2.2\DICs_API.AssemblyInfo.cs
+C:\Users\lucas.tarumoto\Documents\DesafioDIC\Dics\DICs_API\DICs_API\obj\Debug\netcoreapp2.2\DICs_API.RazorTargetAssemblyInfo.cache
+C:\Users\lucas.tarumoto\Documents\DesafioDIC\Dics\DICs_API\DICs_API\obj\Debug\netcoreapp2.2\DICs_API.dll
+C:\Users\lucas.tarumoto\Documents\DesafioDIC\Dics\DICs_API\DICs_API\obj\Debug\netcoreapp2.2\DICs_API.pdb

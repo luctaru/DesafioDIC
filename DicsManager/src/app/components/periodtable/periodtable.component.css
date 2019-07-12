@@ -1,0 +1,17 @@
+.full-width-table {
+  width: 100%;
+}
+
+.search-input{
+  width: 83%;
+  padding-left: 3%;
+  padding-right: 3%;
+}
+
+.add-button {
+  display: flex;
+  background-color: #1a587d!important;
+  margin: 1%;
+  border-radius: 50%!important;
+  justify-content: center;
+}

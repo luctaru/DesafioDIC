@@ -1,0 +1,45 @@
+.container-dialog{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+.firstForm{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.secondForm{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.btn-dialog{
+  padding: 0;
+  border: none;
+  background: none;
+  outline: none;
+}
+
+.btn-dialog :hover{
+  cursor: pointer;
+}
+
+
+@media only screen and (max-width: 630px) {
+  .step-label{
+    display: none;
+  }
+  .btn-dialog{
+    max-width: 10%;
+  }
+}
+
+@media only screen and (max-width: 770px) {
+
+  .btn-dialog{
+    max-width: 10%;
+  }
+}

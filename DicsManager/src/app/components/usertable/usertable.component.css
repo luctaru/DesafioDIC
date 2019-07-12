@@ -1,0 +1,48 @@
+.full-width-table {
+  width: 100%;
+}
+
+.search-input{
+  width: 93%;
+  padding-left: 3%;
+}
+
+.title-div {
+  display: flex;
+  width: 100% !important;
+  margin-bottom: 3%;
+  box-shadow: 0px 5px 10px -5.5px rgba(0, 0, 0, 0.75);
+  margin-top: 5.5%;
+  position:fixed;
+  background-color: #f0f0f0;
+  z-index: 1;
+}
+
+.title-div h1 {
+  padding-left: 5%;
+}
+
+.add-button {
+  display: flex;
+  background-color: #1a587d!important;
+  margin: 1%;
+  border-radius: 50%!important;
+  justify-content: center;
+}
+
+.td-name-link:hover{
+  cursor: pointer;
+  background-color: #c7c7c7;
+}
+
+@media only screen and (max-width: 770px) {
+  .title-div{
+    margin-top: 3%;
+  }
+}
+
+@media only screen and (max-width: 630px) {
+  .title-div {
+    margin-top: 7.5%;
+  }
+}

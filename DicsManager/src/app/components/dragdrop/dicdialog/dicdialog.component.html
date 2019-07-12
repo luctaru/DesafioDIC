@@ -1,0 +1,21 @@
+<div class="container-dialog">
+  <button class="btn-dialog" mat-dialog-close>
+    <mat-icon>close</mat-icon>
+  </button>
+
+  <mat-horizontal-stepper linear="false" #stepper class="container-stepper">
+    <mat-step [stepControl]="firstFormGroup">
+      <form class="firstForm" [formGroup]="firstFormGroup">
+        <ng-template matStepLabel>Update DICs</ng-template>
+        <mat-form-field>
+          <textarea class="description-textarea" type="text" matInput
+            placeholder="Description" formControlName="description" required></textarea>
+        </mat-form-field><br />
+      </form>
+    </mat-step>
+  </mat-horizontal-stepper>
+
+  <button class="btn-dialog" (click)="save()">
+    <mat-icon>check</mat-icon>
+  </button>
+</div>

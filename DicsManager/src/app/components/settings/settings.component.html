@@ -1,0 +1,86 @@
+<div class="title-div">
+  <h1>Settings</h1>
+
+</div>
+<div class="container-div" style="margin-top: 11%!important; margin-right: 1%; margin-left: 1%">
+  <mat-tab-group>
+    <mat-tab label="Current User">
+      <div class="container-dialog"
+        style="display: flex; justify-content: center; width: 100%">
+        <form class="firstForm" [formGroup]="firstFormGroup"
+        style="margin-top:2%; width: 70%; display:flex; flex-direction: column; justify-content: center">
+
+          <mat-form-field>
+            <input type="text" matInput formControlName="name" required placeholder="Full Name">
+          </mat-form-field><br />
+
+          <mat-form-field>
+            <input email matInput formControlName="email" required placeholder="E-mail">
+          </mat-form-field><br />
+
+          <mat-form-field>
+            <input type="text" matInput formControlName="avatar" placeholder="Photo Link">
+          </mat-form-field><br />
+
+          <mat-form-field>
+            <mat-select formControlName="department" required placeholder="User Department"
+              selected="data.body.department">
+              <mat-option *ngFor="let d of departmentArray" [value]="d.id">
+                {{ d.name }}
+              </mat-option>
+            </mat-select>
+          </mat-form-field><br />
+
+          <mat-form-field>
+            <mat-select formControlName="process" placeholder="User Process" selected="data.body.process">
+              <mat-option *ngFor="let p of processArray" [value]="p.id">
+                {{ p.name }}
+              </mat-option>
+            </mat-select>
+          </mat-form-field><br />
+
+          <mat-form-field>
+            <mat-select formControlName="isLeaderDepartment" required placeholder="Department Leader"
+              selected="data.body.isLeaderDepartment">
+              <mat-option [value]="0">
+                No
+              </mat-option>
+              <mat-option [value]="1">
+                Yes
+              </mat-option>
+            </mat-select>
+          </mat-form-field><br />
+
+          <mat-form-field>
+            <mat-select formControlName="isLeaderProcess" required placeholder="Process Leader"
+              selected="data.body.isLeaderProcess">
+              <mat-option [value]="0">
+                No
+              </mat-option>
+              <mat-option [value]="1">
+                Yes
+              </mat-option>
+            </mat-select>
+          </mat-form-field><br />
+
+          <mat-form-field>
+            <mat-select formControlName="isAdmin" required placeholder="Administrator" selected="data.body.isAdmin">
+              <mat-option [value]="0">
+                No
+              </mat-option>
+              <mat-option [value]="1">
+                Yes
+              </mat-option>
+            </mat-select>
+          </mat-form-field><br />
+          <button mat-button type="submit" style="background-color: rgb(107, 179, 0)">Save</button>
+        </form>
+      </div>
+
+
+    </mat-tab>
+    <mat-tab label="Period">
+      <app-periodtable></app-periodtable>
+    </mat-tab>
+  </mat-tab-group>
+</div>

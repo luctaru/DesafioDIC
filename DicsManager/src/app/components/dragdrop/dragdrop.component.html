@@ -1,0 +1,134 @@
+<div class="title-div">
+  <h1 style="margin: auto 0 auto 0;">DICs</h1>
+  <button class="add-button" mat-icon-button (click)="add()">
+    <mat-icon class="mat-18" style="color:white!important;">add</mat-icon>
+  </button>
+  <div class="filter-div">
+    <button class="add-button" mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu"
+      (click)="$event.stopPropagation()">
+      <mat-icon class="mat-18" style="color:white!important;">filter_list</mat-icon>
+    </button>
+    <!-- <h4>{{ labelYear }} - {{ labelPeriod }}</h4> -->
+  </div>
+
+  <mat-menu style="display: flex; justify-content: center;" #menu="matMenu">
+    <button mat-menu-item [matMenuTriggerFor]="subMenuYear" (click)="$event.stopPropagation()">{{ labelYear }} -
+      {{ labelPeriod }}</button>
+  </mat-menu>
+  <mat-menu #subMenuYear="matMenu">
+      <button mat-menu-item (click)="filterYear('All')">All</button>
+    <button mat-menu-item *ngFor="let y of year" [matMenuTriggerFor]="subMenuPeriodType"
+      (mouseenter)="filterYear(y)">{{ y }}</button>
+  </mat-menu>
+  <mat-menu #subMenuPeriodType="matMenu">
+    <button mat-menu-item *ngFor="let p of period"
+      [matMenuTriggerFor]="p.name == 'Bimestral' ? subMenuBimonthly : subMenuMonthly"
+      (mouseenter)="filterPeriodType(p)">{{ p.name == 'Bimestral' ? 'Bimonthly' : 'Monthly' }}
+    </button>
+    <button mat-menu-item (click)="filterPeriod('No period')">No period</button>
+  </mat-menu>
+  <mat-menu #subMenuBimonthly="matMenu">
+    <button mat-menu-item *ngFor="let q of bimonthlyArray" (click)="filterPeriod(q)">{{ q }}</button>
+  </mat-menu>
+  <mat-menu #subMenuMonthly="matMenu">
+    <button mat-menu-item *ngFor="let m of monthlyArray" (click)="filterPeriod(m)">{{ m }}</button>
+  </mat-menu>
+
+</div>
+
+<div cdkDropListGroup class="container-drag">
+
+  <div class="container">
+    <h2>To Define</h2>
+    <div cdkDropList #todefineList="cdkDropList" [cdkDropListData]="todefine" class="list"
+      (cdkDropListDropped)="drop($event)" [cdkDropListEnterPredicate]="noReturnPredicate">
+      <div class="list-item" *ngFor="let item of todefine" cdkDrag (cdkDragDropped)="dropped(item)" cdkDragData="to">
+        <div style="width: 50%">
+          <p>{{item.user.name}}</p>
+          <p>Start Date: {{item.startDate | date:'dd/MM/yyyy'}}</p>
+          <p *ngIf="item.isLate == true; else elseBlock" class="p-icon-out">
+            <mat-icon>event_busy</mat-icon>
+          </p>
+          <div *cdkDragPreview class="preview-div">
+            <img class="img-avatar" src={{item.user.avatar}}>
+            <div style="margin: 1%">
+              <p>{{item.user.name}}</p>
+              <p class="description-p">Description: {{item.description}}</p>
+              <p>Department: {{item.user.department.name}}</p>
+              <p>Process: {{item.user.process.name}}</p>
+            </div>
+          </div>
+        </div>
+        <ng-template #elseBlock>
+          <p class="p-icon-in">
+            <mat-icon>event_available</mat-icon>
+          </p>
+        </ng-template>
+        <app-settingsbutton [obj]="item"></app-settingsbutton>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <h2>Defined</h2>
+    <div cdkDropList #definedList="cdkDropList" [cdkDropListData]="defined" class="list"
+      (cdkDropListDropped)="drop($event)" [cdkDropListEnterPredicate]="otherPredicate">
+      <div class="list-item" *ngFor="let item of defined" cdkDrag (cdkDragDropped)="dropped(item)" cdkDragData="de">
+        <div style="width: 50%">
+          <p>{{item.user.name}}</p>
+          <p>Start Date: {{item.startDate | date:'dd/MM/yyyy'}}</p>
+          <p *ngIf="item.isLate == true; else elseBlock" class="p-icon-out">
+            <mat-icon>event_busy</mat-icon>
+          </p>
+          <div *cdkDragPreview class="preview-div">
+            <img class="img-avatar" src={{item.user.avatar}}>
+            <div style="margin: 1%">
+              <p>{{item.user.name}}</p>
+              <p class="description-p">Description: {{item.description}}</p>
+              <p>Department: {{item.user.department.name}}</p>
+              <p>Process: {{item.user.process.name}}</p>
+            </div>
+          </div>
+        </div>
+        <ng-template #elseBlock>
+          <p class="p-icon-in">
+            <mat-icon>event_available</mat-icon>
+          </p>
+        </ng-template>
+        <app-settingsbutton [obj]="item"></app-settingsbutton>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <h2>Concluded</h2>
+    <div cdkDropList #concludedList="cdkDropList" [cdkDropListData]="concluded" class="list"
+      (cdkDropListDropped)="drop($event)" [cdkDropListEnterPredicate]="evenPredicate">
+      <div class="list-item" *ngFor="let item of concluded" cdkDrag (cdkDragDropped)="dropped(item)" cdkDragData="con">
+        <div style="width: 50%">
+          <p>{{item.user.name}}</p>
+          <p>Start Date: {{item.startDate | date:'dd/MM/yyyy'}}</p>
+          <p *ngIf="item.isLate == true; else elseBlock" class="p-icon-out">
+            <mat-icon>event_busy</mat-icon>
+          </p>
+          <div *cdkDragPreview class="preview-div">
+            <img class="img-avatar" src={{item.user.avatar}}>
+            <div style="margin: 1%">
+              <p>{{item.user.name}}</p>
+              <p class="description-p">Description: {{item.description}}</p>
+              <p>Department: {{item.user.department.name}}</p>
+              <p>Process: {{item.user.process.name}}</p>
+            </div>
+          </div>
+        </div>
+        <ng-template #elseBlock>
+          <p class="p-icon-in">
+            <mat-icon>event_available</mat-icon>
+          </p>
+        </ng-template>
+        <app-settingsbutton [obj]="item"></app-settingsbutton>
+      </div>
+    </div>
+  </div>
+
+</div>

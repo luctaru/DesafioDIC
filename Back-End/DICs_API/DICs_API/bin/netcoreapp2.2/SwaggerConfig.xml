@@ -1,0 +1,68 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>DICs_API</name>
+    </assembly>
+    <members>
+        <member name="P:DICs_API.Models.Configuration.Id">
+            <summary>
+            Id da configuração
+            </summary>
+        </member>
+        <member name="P:DICs_API.Models.Configuration.Period">
+            <summary>
+            Id do período
+            </summary>
+        </member>
+        <member name="P:DICs_API.Models.DicHistory.Id">
+            <summary>
+            Id do Histórico do  Dic
+            </summary>
+        </member>
+        <member name="P:DICs_API.Models.DicHistory.IdDic">
+            <summary>
+            Id do Dic referente
+            </summary>
+        </member>
+        <member name="P:DICs_API.Models.DicHistory.StatusDic">
+            <summary>
+            Status do Dic
+            </summary>
+        </member>
+        <member name="P:DICs_API.Models.DicHistory.Note">
+            <summary>
+            observação sobre alteração
+            </summary>
+        </member>
+        <member name="P:DICs_API.Models.DicHistory.Date">
+            <summary>
+            Data da alteração
+            </summary>
+        </member>
+        <member name="P:DICs_API.Models.DicHistory.Type">
+            <summary>
+            tipo de alteração
+            </summary>
+        </member>
+        <member name="P:DICs_API.Models.Period.Id">
+            <summary>
+            Id do período
+            </summary>
+        </member>
+        <member name="P:DICs_API.Models.Period.Months">
+            <summary>
+            Quantidade de meses
+            </summary>
+        </member>
+        <member name="P:DICs_API.Models.Period.Name">
+            <summary>
+            Nome do período
+            </summary>
+        </member>
+        <member name="P:DICs_API.Models.Period.Removed">
+            <summary>
+            Se está inativo
+            </summary>
+        </member>
+    </members>
+</doc>

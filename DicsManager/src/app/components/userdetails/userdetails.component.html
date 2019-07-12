@@ -1,0 +1,120 @@
+<div class="title-div">
+  <h1 style="margin: auto 0 auto 0;">Details</h1>
+
+
+</div>
+
+<mat-card class="example-card">
+  <mat-card-header>
+    <!-- <div mat-card-avatar class="example-header-image">
+    </div> -->
+    <mat-card-title>{{ user?.name }}</mat-card-title>
+    <mat-card-subtitle>{{ user?.department.name }}, {{ user?.process.name }}</mat-card-subtitle>
+    <mat-card-subtitle *ngIf="mainDic?.user.isLeaderDepartment === 1">Department Leader</mat-card-subtitle>
+    <mat-card-subtitle *ngIf="mainDic?.user.isLeaderProcess === 1">Process Leader</mat-card-subtitle>
+    <button mat-icon-button (click)="edit()"><mat-icon>edit</mat-icon></button>
+  </mat-card-header>
+  <mat-card-content class="content-container">
+    <div style="display: flex; justify-content: center">
+      <img mat-card-image [src]="user?.avatar">
+    </div>
+
+    <div class="description-div" *ngIf="mainDic != null; else elseDic">
+      <h1>DIC dated in {{ mainDic?.startDate | date:'dd/MM/yyyy' }}</h1>
+      <p style="font-size:17pt!important;"><b>Status: </b>{{ mainDic?.status.name }}</p>
+      <p style="font-size:17pt!important;" *ngIf="mainDic?.status.id == 3;"><b>Finished in</b>
+        {{ mainDic?.finishedDate | date:'dd/MM/yyyy' }}</p>
+      <p *ngIf="mainDic?.isLate == true; else elseLate" class="p-icon-out" style="font-size:17pt!important;">
+        <b>In time/Late: </b>
+        <mat-icon>event_busy</mat-icon>
+      </p>
+      <ng-template #elseLate>
+        <p class="p-icon-in" style="font-size:17pt!important;">
+          <b>In time/Late: </b>
+          <mat-icon>event_available</mat-icon>
+        </p>
+      </ng-template>
+      <div style="flex-wrap: wrap;
+      word-wrap: break-word;">
+        <p style="font-size:x-large!important;"><b>Description: </b>{{ mainDic?.description }}</p>
+      </div>
+
+    </div>
+
+    <ng-template #elseDic>
+      <h1>NO DIC FOR THIS PERIOD !</h1>>
+    </ng-template>
+
+    <div>
+      <h3>All User Dics</h3>
+      <cdk-virtual-scroll-viewport itemSize="50" class="example-viewport">
+        <div *cdkVirtualFor="let item of dicsArray" class="example-item">
+          <button mat-button (click)="changeDic(item)">
+            <p>DIC: {{ item?.startDate | date:'dd/MM/yyyy' }}; {{ item.status.name }}</p>
+          </button>
+
+        </div>
+      </cdk-virtual-scroll-viewport>
+    </div>
+
+  </mat-card-content>
+  <mat-card-actions>
+
+
+  </mat-card-actions>
+</mat-card>
+
+<mat-card class="example-card" style="margin-top: 5%">
+  <mat-card-header>
+    <mat-card-title>Statistics</mat-card-title>
+    <mat-card-subtitle>{{ labelYear }} - {{ labelPeriod }}</mat-card-subtitle>
+    <div class="filter-div">
+        <button class="add-button" mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu"
+          (click)="$event.stopPropagation()">
+          <mat-icon class="mat-18" style="color:white!important;">filter_list</mat-icon>
+        </button>
+      </div>
+
+  </mat-card-header>
+
+  <mat-card-content class="content-container">
+    <google-chart *ngIf="chart; else elseChart" title="User DICs" type="PieChart" [data]="chartData"
+      [options]="chartOptions" [width]="width" [height]="height">
+    </google-chart>
+
+    <google-chart *ngIf="chartColumn; else elseChart" title="Number of DICs concluded from last 3 years"
+      type="ColumnChart" [data]="columnData" [options]="columnOptions" [width]="width" [height]="height">
+    </google-chart>
+
+    <ng-template #elseChart>
+      <h1>No Statistics for this period !</h1>
+    </ng-template>
+
+  </mat-card-content>
+  <mat-card-actions>
+  </mat-card-actions>
+</mat-card>
+
+
+<mat-menu style="display: flex; justify-content: center;" #menu="matMenu">
+  <button mat-menu-item [matMenuTriggerFor]="subMenuYear" (click)="$event.stopPropagation()">{{ labelYear }} -
+    {{ labelPeriod }}</button>
+</mat-menu>
+<mat-menu #subMenuYear="matMenu">
+  <button mat-menu-item (click)="filterYear('Current')">Current</button>
+  <button mat-menu-item *ngFor="let y of year" [matMenuTriggerFor]="subMenuPeriodType"
+    (mouseenter)="filterYear(y)">{{ y }}</button>
+</mat-menu>
+<mat-menu #subMenuPeriodType="matMenu">
+  <button mat-menu-item *ngFor="let p of period"
+    [matMenuTriggerFor]="p.name == 'Bimestral' ? subMenuBimonthly : subMenuMonthly"
+    (mouseenter)="filterPeriodType(p)">{{ p.name == 'Bimestral' ? 'Bimonthly' : 'Monthly' }}
+  </button>
+  <button mat-menu-item (click)="filterPeriod('No period')">No period</button>
+</mat-menu>
+<mat-menu #subMenuBimonthly="matMenu">
+  <button mat-menu-item *ngFor="let q of bimonthlyArray" (click)="filterPeriod(q)">{{ q }}</button>
+</mat-menu>
+<mat-menu #subMenuMonthly="matMenu">
+  <button mat-menu-item *ngFor="let m of monthlyArray" (click)="filterPeriod(m)">{{ m }}</button>
+</mat-menu>

@@ -1,0 +1,55 @@
+/*Usuários*/
+SELECT u.*, d.*, p.* FROM USERS u INNER JOIN DEPARTMENT d ON u.ID_DEPARTMENT = d.ID
+							      INNER JOIN PROCESS p ON u.ID_PROCESS = p.ID
+								  WHERE u.REMOVED = 0
+
+SELECT u.*, d.*, p.* FROM users u INNER JOIN DEPARTMENT d ON u.ID_DEPARTMENT = d.id
+							      INNER JOIN PROCESS p ON u.ID_PROCESS = p.id
+					  		      WHERE u.id = @Id AND u.REMOVED = 0
+
+								  SELECT u.*, d.*, p.* FROM users u INNER JOIN DEPARTMENT d ON u.ID_DEPARTMENT = d.id
+							      INNER JOIN PROCESS p ON u.ID_PROCESS = p.id
+					  		      WHERE u.id = 2 AND u.REMOVED = 0
+
+INSERT INTO USERS (NAME, AVATAR, EMAIL, PWD, ID_DEPARTMENT, ID_PROCESS, IS_LEADER_DEPARTMENT, IS_LEADER_PROCESS, REMOVED)
+		    VALUES(@Name, @Avatar, @Email, @Pwd, @IdDepartment, @IdProcess, @IsLeaderDepartment, @IsLeaderProcess, 0)
+
+UPDATE USERS SET REMOVED = 1 WHERE ID = @Id
+
+
+UPDATE USERS SET NAME = @Name,
+		         AVATAR = @Avatar,
+				 EMAIL = @Email,
+				 PWD = @Pwd,
+				 ID_DEPARTMENT = @IdDepartment,
+				 ID_PROCESS = @IdProcess,
+				 IS_LEADER_DEPARTMENT = @IsLeaderDepartment,
+				 IS_LEADER_PROCESS = @IsLeaderProcess
+				 WHERE ID = @Id
+
+
+/*Status*/
+SELECT * FROM STATUS WHERE REMOVED = 0
+
+/*Período*/
+SELECT * FROM PERIOD WHERE REMOVED = 0
+
+INSERT INTO PERIOD (MONTHS, NAME) VALUES(@Months, @Name)
+
+UPDATE PERIOD SET REMOVED = 1 WHERE ID = @Id
+
+UPDATE PERIOD SET MONTHS = @Months, NAME = @Name WHERE ID = @Id
+
+/*Processo*/
+SELECT p.*, d.* FROM PROCESS p INNER JOIN DEPARTMENT d ON p.ID_DEPARTMENT = d.ID WHERE p.REMOVED = 0
+
+SELECT p.*, d.* FROM PROCESS p INNER JOIN DEPARTMENT d ON p.ID_DEPARTMENT = d.id WHERE p.ID = @Id AND p.REMOVED = 0
+
+SELECT u.* FROM USERS u INNER JOIN PROCESS p ON u.ID_PROCESS = p.ID WHERE p.ID = @Id AND u.REMOVED = 0
+
+INSERT INTO PROCESS (NAME, ID_DEPARTMENT) VALUES (@Name, @IdDepartment)
+
+UPDATE PROCESS SET REMOVED = 1 WHERE ID = @Id
+
+UPDATE PROCESS SET NAME = @Name, ID_DEPARTMENT = @IdDepartment WHERE ID = @Id
+
